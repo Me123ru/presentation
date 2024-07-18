@@ -1,0 +1,31 @@
+<h4> HospitalsList</h4>
+<hr>
+<br>
+<table class = "table table-striped">
+    <thead>
+        <tr>
+            <th> Id</th>
+            <th> First Name </th>
+            <th> Last Name</th>
+            <th> Gender </th>
+            <th> Phone Number</th>
+            <th> Email </th>
+            <th> Actions </th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr *ngFor = "let hospital of hospitals" >
+            <td> {{ hospital.id }} </td>
+            <td> {{ hospital.firstName }} </td>
+            <td> {{ hospital.lastName }} </td>
+            <td> {{ hospital.gender }} </td>
+            <td> {{ hospital.phonenumber }} </td>
+            <td> {{ hospital.email }} </td>
+            <td>
+                <button (click) = "updateHospital(hospital.id)" class = "btn btn-info"> Update</button>
+                <button (click) = "deleteHospital(hospital.id)" class = "btn btn-danger" style="margin-left: 10px"> Delete</button>
+                <button (click) = "hospitalDetails(hospital.id)" class = "btn btn-info" style="margin-left: 10px"> View</button>
+            </td>
+        </tr>
+    </tbody>
+</table>

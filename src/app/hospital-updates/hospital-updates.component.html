@@ -1,0 +1,64 @@
+<div class="col-md-10 offset-md-1">
+    <h4> Updates Hospitals </h4>
+    <hr>
+    <br>
+    <form (ngSubmit) = "onSubmit()">
+
+        <div class="row">
+            <div class="col-sm-6">
+                <div class="form-group">
+                    <label> First Name:</label>
+                    <input type="text" class ="form-control" id = "firstName"
+                        [(ngModel)] = "hospital.firstName" name = "firstName">
+                </div>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-sm-6">
+                <div class="form-group">
+                    <label> Last Name:</label>
+                    <input type="text" class ="form-control" id = "lastName"
+                        [(ngModel)] = "hospital.lastName" name = "lastName">
+                </div>
+            </div>
+        </div>
+       
+        <div class="row">
+            <div class="col-sm-6">
+                <div class="form-group">
+                    <label> Gender:</label>
+                    <input type="text" class ="form-control" id = "gender"
+                        [(ngModel)] = "hospital.gender" name = "gender">
+                </div>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-sm-6">
+                <div class="form-group">
+                    <label> Phone Number:</label>
+                    <input type="text" class ="form-control" id = "phonenumber"
+                        [(ngModel)] = "hospital.phonenumber" name = "phonenumber">
+                </div>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-sm-6">
+                <div class="form-group">
+                    <label> Email:</label>
+                    <input type="text" class ="form-control" id = "email"
+                        [(ngModel)] = "hospital.email" name = "email">
+                </div>
+            </div>
+        </div>
+            
+        
+        <p>
+        <div>
+          <button class = "btn btn-success" type ="submit">Submit</button>
+        </div>
+
+    </form>
+    </div>

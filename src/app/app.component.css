@@ -1,0 +1,19 @@
+.navbar {
+    background-color: blue;
+}
+
+.navbar-brand {
+    padding: 16px;
+    color: blue;
+}
+
+.nav-link {
+    color: aliceblue;
+}
+
+.text-center {
+    font-size: large;
+    padding-top: 10px;
+    color: blue;
+    font-weight: bold;
+}
